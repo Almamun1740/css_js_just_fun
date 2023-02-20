@@ -1,0 +1,65 @@
+::-webkit-scrollbar {
+  width: 0.7vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6e78ff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6d75e8;
+}
+
+/*::-webkit-scrollbar - Affects the entire scrollbar.
+
+::-webkit-scrollbar-thumb - Affects the draggable scrolling handle.
+
+::-webkit-scrollbar-track - Affects the space where we move the thumb.*/
+
+/* if you want to add arrow buttons to your customized scrollbars. */
+::-webkit-scrollbar-button:single-button {
+  background-color: #ece4e4;
+  display: block;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:hover {
+  background-color: #d0cbcb;
+}
+
+/* you can also add SVG icons and other CSS properties. */
+/* Up arrow*/
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: 14px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='<http://www.w3.org/2000/svg>' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='<http://www.w3.org/2000/svg>' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+/* Down arrow*/
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: 14px;
+  width: 16px;
+  background-position: center 5px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='<http://www.w3.org/2000/svg>' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='<http://www.w3.org/2000/svg>' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+/* Create Custom Scrollbars in Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f90 #f5f5f5;
+}
